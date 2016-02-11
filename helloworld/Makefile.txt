@@ -1,0 +1,7 @@
+all: helloworld
+helloworld: helloworld.o
+	gcc -s helloworld.o -o helloworld
+helloworld.o: helloworld.c
+	gcc -c helloworld.c -o helloworld.o -c
+clean:
+	rm helloworld helloworld.o
