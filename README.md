@@ -1,2 +1,2 @@
 # os
-Fixed hw0
+OS course homeworks
