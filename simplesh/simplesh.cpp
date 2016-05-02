@@ -50,7 +50,7 @@ void newProc(vector<char*> args, bool end) {
 }
 
 void sigint_handler(int signal) {
-    fprintf(stderr, "Signal %d came for %d programms\n", signal, pids.size());
+    fprintf(stderr, "Signal %d came for %d programms\n", signal, (int) pids.size());
     for (int i = 0; i < pids.size(); i++) {
         kill(pids[i], signal);
     }
